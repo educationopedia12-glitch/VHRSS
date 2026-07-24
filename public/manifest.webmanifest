@@ -1,0 +1,20 @@
+{
+  "name": "Vishwa Hindu Rashtra Seva Sangathan",
+  "short_name": "VHRSS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF9F1",
+  "theme_color": "#F36A00",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

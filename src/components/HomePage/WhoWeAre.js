@@ -1,0 +1,130 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function WhoWeAre() {
+  return (
+    <section className="bg-[#fdf7eb] py-24">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <div className="flex items-center justify-center gap-4 text-[#c58a2b] uppercase tracking-[0.35em] text-xs">
+            <span className="w-10 h-px bg-[#c58a2b]" />
+            Our Identity
+            <span className="w-10 h-px bg-[#c58a2b]" />
+          </div>
+
+          <h2 className="mt-4 text-5xl font-serif font-extrabold text-[#2b1b12]">
+            हम कौन हैं
+          </h2>
+
+          <p className="mt-5 italic text-lg text-[#8a5a20]">
+            हिंदू दर्शन के शाश्वत ज्ञान के माध्यम से भारत की आध्यात्मिक और सांस्कृतिक विरासत को संरक्षित करने के लिए प्रतिबद्ध।
+          </p>
+
+          <div className="w-44 h-px bg-[#d8b06b] mx-auto mt-5"></div>
+        </div>
+
+        {/* Content */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+          <div className="relative group h-[620px] overflow-hidden rounded-3xl">
+
+            {/* Image */}
+            <Image
+              src="/images/logo.webp"
+              alt="Vishwa Hindu Rashtra Seva Sangathan"
+              fill
+              className="object-contain transition-transform duration-700 group-hover:scale-110"
+            />
+
+            {/* Gradient Overlay */}
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10" /> */}
+
+            {/* Decorative Inner Border */}
+            {/* <div className="absolute inset-4 rounded-2xl border border-white/30 pointer-events-none" /> */}
+
+            {/* Bottom Caption */}
+            {/* <div className="absolute bottom-0 left-0 right-0 p-8">
+              <h3 className="text-3xl font-bold text-white drop-shadow-lg">
+                विश्व हिन्दू राष्ट्र सेवा संगठन
+              </h3>
+
+              <p className="mt-2 text-orange-200">
+                Dedicated to Dharma • Service • Nation
+              </p>
+            </div> */}
+
+          </div>
+
+          {/* Text */}
+          <div>
+
+            <div className="space-y-8 text-lg leading-10 text-[#4d3424]">
+
+              <p>
+                विश्व हिंदू राष्ट्र की स्थापना लोगों को
+                <span className="font-extrabold">
+                  {" "} सनातन
+                  धर्म
+                </span>
+                {" "} की शाश्वत शिक्षाओं के करीब लाने और भारत की समृद्ध आध्यात्मिक विरासत को संरक्षित करने के उद्देश्य से की गई थी। आज की तेज़ी से बदलती दुनिया में, कई पारंपरिक मूल्य और प्रथाएँ धीरे-धीरे लुप्त होती जा रही हैं।
+              </p>
+
+              <p>
+                हमारा संगठन सार्थक धार्मिक कार्यक्रमों, शैक्षिक पहलों और सामुदायिक आयोजनों के ज़रिए लोगों को उनकी जड़ों से फिर से जोड़ने का काम करता है, जो हिंदू संस्कृति और दर्शन का जश्न मनाते हैं।
+              </p>
+
+              <p>
+                धार्मिक सभाओं, आध्यात्मिक प्रवचनों, धर्मग्रंथों के पाठ, भक्तिपूर्ण आयोजनों, तीर्थयात्राओं और सामुदायिक सेवा के माध्यम से हम लोगों को हिंदू सभ्यता की समृद्ध विरासत से जोड़ते हैं।
+              </p>
+
+            </div>
+
+            {/* Divider */}
+            <div className="border-t border-[#dcc8a0] my-10"></div>
+
+            {/* Stats */}
+            {/* <div className="grid grid-cols-3 text-center">
+
+              <div>
+                <h3 className="text-4xl font-semibold text-[#c58a2b]">20+</h3>
+                <p className="uppercase tracking-widest text-sm mt-2">
+                  Years
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-semibold text-[#c58a2b]">40+</h3>
+                <p className="uppercase tracking-widest text-sm mt-2">
+                  Events/Year
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-semibold text-[#c58a2b]">
+                  20,000+
+                </h3>
+                <p className="uppercase tracking-widest text-sm mt-2">
+                  Devotees
+                </p>
+              </div>
+
+            </div> */}
+
+            {/* Button */}
+            <Link
+              href="/about"
+              className="inline-block mt-12 uppercase tracking-[0.2em] text-[#d46d22] font-semibold hover:translate-x-2 transition"
+            >
+              Read Our Full Story →
+            </Link>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
+}
