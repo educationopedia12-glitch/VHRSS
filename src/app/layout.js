@@ -25,6 +25,10 @@ export const metadata = {
   description:
     "Vishwa Hindu Rashtra Seva Sangathan is dedicated to preserving Sanatan Dharma, promoting national unity, cultural heritage, and social service.",
 
+  verification: {
+    google: "HoqnBIXHZP0cHyQSQ37m0aljDZF_pEFS_aimCl0A9bQ",
+  },
+
   keywords: [
     "Sanatan Dharma",
     "Hindu Organization",
